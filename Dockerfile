@@ -14,7 +14,7 @@ WORKDIR /home/devops/app
 COPY --chown=devops:devops app.py .
 
 # Instala Flask (necesario para la aplicación web)
-RUN pip install --user -r flask
+RUN pip install --user flask
 
 # Expone el puerto en el que correrá la aplicación
 EXPOSE 80
